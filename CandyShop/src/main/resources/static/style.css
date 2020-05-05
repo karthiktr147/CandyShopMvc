@@ -1,0 +1,137 @@
+@charset "ISO-8859-1";
+
+/*h1 {
+    color:white; 
+    background-color: rgb(177, 126, 16);
+    font-size: 50px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+div {
+	margin: 10% auto;
+    background-color: rgb(177, 126, 16);
+    align-items: center;
+	border-radius: 2%;
+	color: white;
+	border: 1px medium grey;
+	width: 70%;
+    padding: 1% 2% 5% 2%;
+    
+}
+ul{
+    border: 4px none crimson;
+    list-style: none;
+    text-shadow: darkblue;
+    align:center;
+}
+button {
+    background-color: rgb(102, 53, 7);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  body {
+    background-image:  url("background.png");
+    background-color: #cccccc;
+  }*/
+  body {
+    margin: 0;
+  }
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    padding: 10px;
+  }
+  nav, aside {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(5, 5, 5);
+  }
+  a, button, label {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  nav a {
+    display: block;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fcf8f8fd;
+    text-align: center;
+   transition: background-color .2s;
+  }
+  nav a:hover {
+    background-color: rgb(90, 88, 88);
+  }
+  
+  section {
+    display: none;
+  }
+  section:target {
+    display: block;
+  }
+  
+  footer p {
+    color: #f96302;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    min-height: 85vh;
+  }
+  .content {
+    flex-grow: 2;
+  }
+  aside {
+    order: 1;
+  }
+  
+  header, footer {
+    background-color:#ccc;
+  }
+  
+  nav, aside {
+    min-width:160px;
+    max-width:300px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    main {
+      flex-direction: column;
+    }
+    nav {
+      order: 1;
+    }
+    aside {
+      order: 2;
+    }
+    nav ul {
+      text-align:center;
+    }
+    nav figure img {
+      width:150px;
+      float:left;
+    }
+    nav, aside {
+      min-width:none;
+      max-width:none;
+    }
+  }
